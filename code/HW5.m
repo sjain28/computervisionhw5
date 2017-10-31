@@ -8,7 +8,7 @@ figure(1)
 plotData(xTest, yTest)
 title('Test data')
 
-[layers, options] = bad(checkpointPath);
+[layers, options] = good(checkpointPath);
 
 net = trainNet(xTrain, yTrain, layers, options, checkpointPath, 2);
 accuracy = testNet(net, xTest, yTest, 3);
